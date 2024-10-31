@@ -1,0 +1,108 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Campo de entrada */
+.input-field {
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #7a9afe;
+    outline: none;
+}
+
+/* Botón de búsqueda */
+.btn {
+    background-color: #7a9afe;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(122, 154, 254, 0.5);
+}
+
+.btn:hover {
+    background-color: #5067e0;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Estilo del resultado */
+.result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #444;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Efecto de transición en el footer */
+footer p {
+    transition: color 0.3s;
+}
+
+footer p:hover {
+    color: #3498db; /* Cambia el color al pasar el mouse */
+}
