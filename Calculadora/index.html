@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="completito">
+        <input type="text" id="num1" placeholder="NUMERO 1...">
+        <input type="text" id="num2" placeholder="NUMERO 2..."> 
+        <div class="botones">    
+            <button class="boton" onclick="suma()">+</button>
+            <button class="boton" onclick="resta()">-</button>
+            <button class="boton" onclick="multiplicacion()">*</button>
+            <button class="boton" onclick="division()">/</button>
+            <button class="boton" onclick="raizCuadrada()">√</button> 
+            <button class="boton" onclick="potenciacion()">^</button>  
+            <button></button>  
+            <button class="boton" onclick="borrar()">DEL</button> 
+
+            <input class="resultado" type="text" id="display" placeholder="Resultado...">
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+<footer>
+    <p>©Carlos Cañadas</p>
+</footer>
+</html>

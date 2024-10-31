@@ -1,0 +1,114 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.completito {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 320px;
+    transition: transform 0.3s;
+}
+
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: border 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boton {
+    flex: 1;
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.boton:hover {
+    background: linear-gradient(145deg, #0056b3, #004494);
+}
+
+.boton:active {
+    transform: scale(0.95);
+}
+
+.resultado {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Efecto de transición en el footer */
+footer p {
+    transition: color 0.3s;
+}
+
+footer p:hover {
+    color: #3498db; /* Cambia el color al pasar el mouse */
+}
+
+@media (max-width: 400px) {
+    .completito {
+        width: 90%;
+    }
+}
