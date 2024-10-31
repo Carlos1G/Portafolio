@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Reservaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div id="calendar"></div>
+    <div id="reservation-form" class="hidden">
+        <h2>Reservar Cañón</h2>
+        <form id="reservationForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="start">Fecha de Inicio:</label>
+            <input type="datetime-local" id="start" name="start" required><br><br>
+            <label for="end">Fecha de Fin:</label>
+            <input type="datetime-local" id="end" name="end" required><br><br>
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@5.11.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/locales/es.global.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
