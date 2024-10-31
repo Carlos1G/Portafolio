@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Donas con Descuento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selecciona tu Dona y Cantidad</h1>
+        <select id="donas" class="dona-select">
+            <option value="" selected disabled>Elige una dona</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="fresa">Fresa</option>
+            <option value="vainilla">Vainilla</option>
+            <option value="oreo">Oreo</option>
+            <option value="caramelo">Caramelo</option>
+        </select>
+
+        <input type="number" id="cantidad" placeholder="Cantidad">
+
+        <button onclick="menu()" class="btn">Calcular Precio</button>
+        <h2 id="salida" class="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>©Carlos Cañadas</p>
+</footer>
+</html>
